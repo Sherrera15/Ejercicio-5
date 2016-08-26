@@ -74,8 +74,9 @@ public class Principal6 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, -1, -1));
+        jLabel1.setFont(new java.awt.Font("JasmineUPC", 3, 24)); // NOI18N
+        jLabel1.setText("DADO UN VECTOR V ");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 180, 30));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Datos Inicial"));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -233,6 +234,7 @@ public class Principal6 extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         String pr,su;
+        
         int produc = 1,s=0,product;
         
         int acum =0;
@@ -246,6 +248,7 @@ public class Principal6 extends javax.swing.JFrame {
             acum = (int) (acum+v[i]);
             su= String.valueOf(acum);
             txtSumatoria.setText(su);
+            
               }
         
         
