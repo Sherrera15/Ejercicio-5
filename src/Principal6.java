@@ -232,7 +232,7 @@ public class Principal6 extends javax.swing.JFrame {
     private void txtMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMostrarActionPerformed
         // TODO add your handling code here:
         
-        String pro,su;
+        String pr,su;
         int produc = 1,s=0,product;
         
         int acum =0;
@@ -240,8 +240,8 @@ public class Principal6 extends javax.swing.JFrame {
         for (int i=0; i< v.length; i++) {
            
             produc= (int) (produc*v[i]);
-            pro= String.valueOf(produc);
-            txtProductoria.setText(pro);
+            pr= String.valueOf(produc);
+            txtProductoria.setText(pr);
             
             acum = (int) (acum+v[i]);
             su= String.valueOf(acum);
