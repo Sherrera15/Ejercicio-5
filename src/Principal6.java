@@ -215,10 +215,12 @@ public class Principal6 extends javax.swing.JFrame {
           getToolkit().beep();
           evt.consume();
           }
+          
     }//GEN-LAST:event_txtVectorKeyTyped
 
     private void txtLlenarManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarManualActionPerformed
         // TODO add your handling code here:
+        
         double l;
         for (int i=0; i<v.length; i++) {
         l= Double.parseDouble(JOptionPane.showInputDialog(this, "Digite el elemento en la posicion"+i));
@@ -229,8 +231,10 @@ public class Principal6 extends javax.swing.JFrame {
 
     private void txtMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMostrarActionPerformed
         // TODO add your handling code here:
+        
         String pro,su;
         int produc = 1,s=0,product;
+        
         int acum =0;
         
         for (int i=0; i< v.length; i++) {
@@ -256,6 +260,7 @@ public class Principal6 extends javax.swing.JFrame {
         
         v = null;
         txtVector.requestFocusInWindow();
+        
     }//GEN-LAST:event_txtBorrarActionPerformed
 
     private void txtLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarAutoActionPerformed
