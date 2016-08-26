@@ -37,11 +37,11 @@ public class Principal6 extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtVector = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
-        txtCrear = new javax.swing.JButton();
-        txtLlenarManual = new javax.swing.JButton();
-        txtLlenarAuto = new javax.swing.JButton();
-        txtMostrar = new javax.swing.JButton();
-        txtBorrar = new javax.swing.JButton();
+        cmdCrear = new javax.swing.JButton();
+        cmdLlenarManual = new javax.swing.JButton();
+        cmdLlenarAuto = new javax.swing.JButton();
+        cmdMostrar = new javax.swing.JButton();
+        cmdBorrar = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtProductoria = new javax.swing.JTextArea();
@@ -95,38 +95,38 @@ public class Principal6 extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Opciones"));
 
-        txtCrear.setText("Crear");
-        txtCrear.addActionListener(new java.awt.event.ActionListener() {
+        cmdCrear.setText("Crear");
+        cmdCrear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtCrearActionPerformed(evt);
+                cmdCrearActionPerformed(evt);
             }
         });
 
-        txtLlenarManual.setText("Llenar Manual");
-        txtLlenarManual.addActionListener(new java.awt.event.ActionListener() {
+        cmdLlenarManual.setText("Llenar Manual");
+        cmdLlenarManual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLlenarManualActionPerformed(evt);
+                cmdLlenarManualActionPerformed(evt);
             }
         });
 
-        txtLlenarAuto.setText("Llenar Auto");
-        txtLlenarAuto.addActionListener(new java.awt.event.ActionListener() {
+        cmdLlenarAuto.setText("Llenar Auto");
+        cmdLlenarAuto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtLlenarAutoActionPerformed(evt);
+                cmdLlenarAutoActionPerformed(evt);
             }
         });
 
-        txtMostrar.setText("Mostrar");
-        txtMostrar.addActionListener(new java.awt.event.ActionListener() {
+        cmdMostrar.setText("Mostrar");
+        cmdMostrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtMostrarActionPerformed(evt);
+                cmdMostrarActionPerformed(evt);
             }
         });
 
-        txtBorrar.setText("Borrar");
-        txtBorrar.addActionListener(new java.awt.event.ActionListener() {
+        cmdBorrar.setText("Borrar");
+        cmdBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBorrarActionPerformed(evt);
+                cmdBorrarActionPerformed(evt);
             }
         });
 
@@ -137,26 +137,26 @@ public class Principal6 extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtBorrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtMostrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtLlenarAuto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtLlenarManual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtCrear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(cmdBorrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cmdMostrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cmdLlenarAuto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cmdLlenarManual, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(cmdCrear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(txtCrear)
+                .addComponent(cmdCrear)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtLlenarManual)
+                .addComponent(cmdLlenarManual)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtLlenarAuto)
+                .addComponent(cmdLlenarAuto)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtMostrar)
+                .addComponent(cmdMostrar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtBorrar)
+                .addComponent(cmdBorrar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -165,6 +165,7 @@ public class Principal6 extends javax.swing.JFrame {
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Productoria de la primera mitad"));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtProductoria.setEditable(false);
         txtProductoria.setColumns(20);
         txtProductoria.setRows(5);
         jScrollPane1.setViewportView(txtProductoria);
@@ -176,6 +177,7 @@ public class Principal6 extends javax.swing.JFrame {
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Sumatoria del la segunda mitad"));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtSumatoria.setEditable(false);
         txtSumatoria.setColumns(20);
         txtSumatoria.setRows(5);
         jScrollPane2.setViewportView(txtSumatoria);
@@ -187,7 +189,7 @@ public class Principal6 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCrearActionPerformed
+    private void cmdCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCrearActionPerformed
         // TODO add your handling code here:
         int vector;
         if (txtVector.getText().trim().isEmpty()){
@@ -206,7 +208,7 @@ public class Principal6 extends javax.swing.JFrame {
         
         
         }
-    }//GEN-LAST:event_txtCrearActionPerformed
+    }//GEN-LAST:event_cmdCrearActionPerformed
 
     private void txtVectorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtVectorKeyTyped
         // TODO add your handling code here:
@@ -219,7 +221,7 @@ public class Principal6 extends javax.swing.JFrame {
           
     }//GEN-LAST:event_txtVectorKeyTyped
 
-    private void txtLlenarManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarManualActionPerformed
+    private void cmdLlenarManualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarManualActionPerformed
         // TODO add your handling code here:
         
         double l;
@@ -228,9 +230,9 @@ public class Principal6 extends javax.swing.JFrame {
         v[i]=l;
         
         }
-    }//GEN-LAST:event_txtLlenarManualActionPerformed
+    }//GEN-LAST:event_cmdLlenarManualActionPerformed
 
-    private void txtMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMostrarActionPerformed
+    private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
         // TODO add your handling code here:
         
         String pr,su;
@@ -253,9 +255,9 @@ public class Principal6 extends javax.swing.JFrame {
         
         
         
-    }//GEN-LAST:event_txtMostrarActionPerformed
+    }//GEN-LAST:event_cmdMostrarActionPerformed
 
-    private void txtBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBorrarActionPerformed
+    private void cmdBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBorrarActionPerformed
         // TODO add your handling code here:
         txtVector.setText("");
         txtProductoria.setText("");
@@ -264,9 +266,9 @@ public class Principal6 extends javax.swing.JFrame {
         v = null;
         txtVector.requestFocusInWindow();
         
-    }//GEN-LAST:event_txtBorrarActionPerformed
+    }//GEN-LAST:event_cmdBorrarActionPerformed
 
-    private void txtLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLlenarAutoActionPerformed
+    private void cmdLlenarAutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarAutoActionPerformed
         // TODO add your handling code here:
         int n;
         for (int i=0; i<v.length; i++) {
@@ -276,7 +278,7 @@ public class Principal6 extends javax.swing.JFrame {
         
         JOptionPane.showMessageDialog(this, "Vector Llenado Correctamente");
         }
-    }//GEN-LAST:event_txtLlenarAutoActionPerformed
+    }//GEN-LAST:event_cmdLlenarAutoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -314,6 +316,11 @@ public class Principal6 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cmdBorrar;
+    private javax.swing.JButton cmdCrear;
+    private javax.swing.JButton cmdLlenarAuto;
+    private javax.swing.JButton cmdLlenarManual;
+    private javax.swing.JButton cmdMostrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
@@ -324,11 +331,6 @@ public class Principal6 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JButton txtBorrar;
-    private javax.swing.JButton txtCrear;
-    private javax.swing.JButton txtLlenarAuto;
-    private javax.swing.JButton txtLlenarManual;
-    private javax.swing.JButton txtMostrar;
     private javax.swing.JTextArea txtProductoria;
     private javax.swing.JTextArea txtSumatoria;
     private javax.swing.JTextField txtVector;

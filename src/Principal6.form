@@ -130,11 +130,11 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="txtBorrar" max="32767" attributes="0"/>
-                      <Component id="txtMostrar" max="32767" attributes="0"/>
-                      <Component id="txtLlenarAuto" max="32767" attributes="0"/>
-                      <Component id="txtLlenarManual" max="32767" attributes="0"/>
-                      <Component id="txtCrear" alignment="0" max="32767" attributes="0"/>
+                      <Component id="cmdBorrar" max="32767" attributes="0"/>
+                      <Component id="cmdMostrar" max="32767" attributes="0"/>
+                      <Component id="cmdLlenarAuto" max="32767" attributes="0"/>
+                      <Component id="cmdLlenarManual" max="32767" attributes="0"/>
+                      <Component id="cmdCrear" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="16" max="32767" attributes="0"/>
               </Group>
@@ -144,59 +144,59 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtCrear" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdCrear" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtLlenarManual" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdLlenarManual" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtLlenarAuto" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdLlenarAuto" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtMostrar" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdMostrar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="txtBorrar" min="-2" max="-2" attributes="0"/>
+                  <Component id="cmdBorrar" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="txtCrear">
+        <Component class="javax.swing.JButton" name="cmdCrear">
           <Properties>
             <Property name="text" type="java.lang.String" value="Crear"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtCrearActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdCrearActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="txtLlenarManual">
+        <Component class="javax.swing.JButton" name="cmdLlenarManual">
           <Properties>
             <Property name="text" type="java.lang.String" value="Llenar Manual"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLlenarManualActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdLlenarManualActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="txtLlenarAuto">
+        <Component class="javax.swing.JButton" name="cmdLlenarAuto">
           <Properties>
             <Property name="text" type="java.lang.String" value="Llenar Auto"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtLlenarAutoActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdLlenarAutoActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="txtMostrar">
+        <Component class="javax.swing.JButton" name="cmdMostrar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Mostrar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMostrarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdMostrarActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="txtBorrar">
+        <Component class="javax.swing.JButton" name="cmdBorrar">
           <Properties>
             <Property name="text" type="java.lang.String" value="Borrar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtBorrarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmdBorrarActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -233,6 +233,7 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="txtProductoria">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
               </Properties>
@@ -273,6 +274,7 @@
           <SubComponents>
             <Component class="javax.swing.JTextArea" name="txtSumatoria">
               <Properties>
+                <Property name="editable" type="boolean" value="false"/>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
               </Properties>
