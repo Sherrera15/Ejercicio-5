@@ -212,6 +212,7 @@ public class Principal6 extends javax.swing.JFrame {
 
     private void txtVectorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtVectorKeyTyped
         // TODO add your handling code here:
+        
          char c=evt.getKeyChar();
           if (!Character.isDigit(c)){
           
@@ -259,6 +260,7 @@ public class Principal6 extends javax.swing.JFrame {
 
     private void cmdBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdBorrarActionPerformed
         // TODO add your handling code here:
+        
         txtVector.setText("");
         txtProductoria.setText("");
         txtSumatoria.setText("");
